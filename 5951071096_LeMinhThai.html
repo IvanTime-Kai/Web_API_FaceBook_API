@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>FACEBOOK API</title>
+        <style>
+            .custom{
+                font-size: 25px;
+                color: red;
+                animation: animation ease-in-out 2s;
+            }
+            .color{
+                font-size: 30px;
+                color: royalblue;
+                animation: animation ease-in 5s;
+            }
+            #p{
+                text-align: center;
+            }
+            @keyframes animation {
+                from {
+                    color: saddlebrown;
+                    opacity: 0;
+                }
+                to {
+                    color: red;
+                    opacity: 0,7;
+
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="color"> Sử dụng Facebook Page Api để lấy thông tin của 3 bài viết gần nhất của Fanpage “Trường Đại học Giao thông Vận tải - Phân hiệu tại TP.HCM - UTC2” </h1>
+        <div>
+            <p id="HienThi"></p>
+        </div>
+        <div>
+            <p id="p" class="custom">----Hết----</p>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>       
+        <script src="script.js"></script>
+    </body>
+</html>
